@@ -2,9 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `<div>
+  <h1>{{title}}</h1>
+  <table-comp></table-comp>
+  <button class="string1">delete first line</button>
+  <button class="string2">delete second line</button>
+  </div>`
 })
 export class AppComponent {
-  title = 'tables';
+  title: string = `AWESOME TABLE`;
 }
